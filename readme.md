@@ -1,17 +1,20 @@
+# LDPK - The Lens Distortion Plugin Kit 
 
-Stripped down version,WIP for testing purpose of linux.
+Stripped down version,WIP for testing purpose in linux.
 
 ### Modifications:
 
+- verbose readme
 - csh script converted to bash
 - added result of examples
 - added empty lib, tmp required for everything to build smoothly
-- added example for radial deg 8 and build notes
+- added example for radial deg 8
+- build notes
 
 ### notes
 
 in the script/makeall.linux.sh script, `ar` is to create an archive, see:
-
+https://www.lifewire.com/ar-linux-command-4093866
 
 ### quick start
 
@@ -19,23 +22,23 @@ OS: Linux (debian based)
 compiler: g++ 9.3.0
 See additional details in doc/tex/...pdf
 
+    $ cd scripts
+    $ ./makeall.linux.sh
+    $ cd ..
+    $ bin/./test_model_visualizer lib/tde4_ldp_radial_deg_8.so test/para_radial_deg_8.data tmp/outgp.data
+    $ gnuplot
+    gnuplot> plot 'outgp.data' with vector
 
-$ cd scripts
-$ ./makeall.linux.sh
-$ cd ..
-$ bin/./test_model_visualizer lib/tde4_ldp_radial_deg_8.so test/para_radial_deg_8.data tmp/outgp.data
-$ gnuplot
-gnuplot> plot 'outgp.data' with vector
-
-Result ![field](img/outgp.png)
+![field](img/outpg.png)
 
 
-Other example:
+**Other example**:
 
-$ g++ -O2 -fPIC -shared -DLDPK_COMPILE_AS_PLUGIN_SDV -I/home/ludovic/Programs/ComputerGraphics/LDPK_LensDistortionPacKage/LDPK/script/../include tde4_ldp_example_radial_deg_8.C  -o ../../lib/tde4_ldp_example_radial_deg_8.so
- $ bin/./test_model_visualizer lib/tde4_ldp_example_radial_deg_8.so test/para_example_radial_deg_8.data tmp/outgp_ex.data
+    $ g++ -O2 -fPIC -shared -DLDPK_COMPILE_AS_PLUGIN_SDV -I/home/ludovic/Programs/ComputerGraphics/LDPK_LensDistortionPacKage/LDPK/script/../include tde4_ldp_example_radial_deg_8.C  -o ../../lib/tde4_ldp_example_radial_deg_8.so
+     $ bin/./test_model_visualizer lib/tde4_ldp_example_radial_deg_8.so test/para_example_radial_deg_8.data tmp/outgp_ex.data
 
-Result:
+
+![field](img/outpg_ex.png)
 
 ## Original readme:
 
