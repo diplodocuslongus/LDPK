@@ -1,3 +1,13 @@
+# empty lib and tmp directories needed to build
+tmp/
+lib/
+bin/
+
+# trailing vi swap files
+
+*.swp
+
+
 # Compiled Object files
 *.slo
 *.lo
