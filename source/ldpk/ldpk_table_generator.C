@@ -3,6 +3,9 @@
 // (C) 2011,2012,2013,2014,2015,2016 - Science-D-Visions. Current version: 1.9.2
 
 
+// writes result of (un)distortion by model 
+// to output file for vizualizing with gnuplot
+
 #include <ldpk/ldpk_table_generator.h>
 #include <ldpk/ldpk_error.h>
 

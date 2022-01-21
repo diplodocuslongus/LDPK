@@ -1,7 +1,3 @@
-// This file is part of the Lens Distortion Plugin Kit
-// Software is provided "as is" - no warranties implied.
-// (C) 2011,2012,2013,2014,2015,2016 - Science-D-Visions. Current version: 1.9.2
-
 // created Ludo 20012022
 // as it didn't exist
 
@@ -291,12 +287,6 @@ public:
 	};
 
 template <class VEC2,class MAT2>
-//const char* tde4_ldp_example_radial_deg_8<VEC2,MAT2>::_para[4] = {
-//	"Distortion - Degree 2",
-//	"Quartic Distortion - Degree 4",
-//	"Degree 6",
-//	"Degree 8"
-//	};
 const char* tde4_ldp_example_radial_deg_8<VEC2,MAT2>::_para[4] = {
 	"Degree 2",
 	"Degree 4",
