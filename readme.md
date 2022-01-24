@@ -49,6 +49,19 @@ See additional details in doc/tex/...pdf
     $ bin/./test_model_visualizer lib/tde4_ldp_radial_decentered_deg_4_cylindric.so test/para_radial_decentered_deg_4.data tmp/outpg_rad_dec_deg4.data
 
 
+    $ bin/./test_model_visualizer lib/tde4_ldp_classic_3de_mixed.so test/para_classic_3de_mixed_cyl.data tmp/outgp_classic_3de_cyl.data 
+    LDPK$ bin/./test_model_visualizer lib/tde4_ldp_classic_3de_mixed.so test/para_classic_3de_mixed.data tmp/outgp_classic_3de.data 
+
+created / modified parameter sets
+
+## gnuplot scripts
+
+in ./gnuplot
+
+ex:
+
+    LDPK/gnuplot$ gnuplot -p -c gp_input.gnu '../tmp/outgp_classic_3de_cyl.data'
+
 ## Original readme:
 
 
