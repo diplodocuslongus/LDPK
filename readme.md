@@ -10,6 +10,7 @@ Stripped down version,WIP for testing purpose in linux.
 - added empty lib, tmp required for everything to build smoothly
 - added example for radial deg 8
 - build notes
+- gnuplot scripts
 
 ### notes
 
